@@ -34,9 +34,10 @@
 /* MAIN CSS */
 body{
     background-color: #fcfcfc!important;
+    scroll-behavior: smooth;
 }
 .color-orange {
-    color:#ff4e00;
+    color:#ff7a3f;
 }
 .color-white {
     color: #fafafa;
@@ -54,7 +55,7 @@ body{
     font-weight: 600;
 }
 .bg-orange {
-    background-color:#ff4e00;
+    background-color:#ff7a3f;
 }
 .bg-transparent {
     background-color: transparent;
@@ -72,7 +73,7 @@ p {
     font-size: 1rem;
 }
 .button {
-    background-color:#ff4e00;
+    background-color:#ff7a3f;
     color: #fafafa;
     padding: 0.5rem 1rem;
     border-radius: .5rem;
@@ -81,13 +82,12 @@ p {
 }
 .button-2 {
     background-color: transparent;
-    color:#ff4e00;
+    color:#ff7a3f;
     padding: 0.5rem 1rem;
     border-radius: .5rem;
-    border: 2px solid#ff4e00;
+    border: 2px solid#ff7a3f;
     box-shadow: 3px 3px 4px rgba(251, 126, 41,.2);
 }
-
 .button:hover {
     background-color:#ff4e00;
     color: #fafafa;
@@ -101,13 +101,13 @@ p {
     color:#ff4e00;
     padding: 0.5rem 1rem;
     border-radius: .5rem;
-    border: 2px solid#ff4e00;
+    border: 2px solid #ff4e00;
     box-shadow: 3px 3px 4px rgba(251, 126, 41,.2);
 }
 
 /* NAV STYLES */
 .header-bg {
-    background: radial-gradient(circle, rgb(12, 12, 103) 0%, rgb(6, 6, 74) 38%, rgb(4, 2, 42) 94%);
+    background: radial-gradient(circle, rgb(91 91 204) 0%, rgb(80 80 177) 38%, rgb(32 24 155) 94%);
     background-size: 150% 150%;
     -webkit-animation: color-change-2x 4s linear infinite alternate both;
     animation: color-change-2x 4s linear infinite alternate both;
@@ -115,7 +115,7 @@ p {
     overflow: hidden;
 }
 .header-wave {
-    background: rgba(8, 28, 141, 0.418);
+    background: rgb(28 48 162 / 42%);
     background-size: 400% 400%;
     border-radius: 1000% 1000% 0 0;
     position: absolute;
@@ -129,7 +129,7 @@ p {
     z-index: 0;
 }
 .header-wave:nth-of-type(2) {
-    background: rgba(20, 47, 200, 0.472);
+    background: rgb(71 55 213 / 47%);
     background-size: 400% 400%;
     bottom: 0;
     animation: wave 18s linear reverse infinite;
@@ -138,7 +138,7 @@ p {
     height: 10em;
 }
 .header-wave:nth-of-type(3) {
-    background: rgba(20, 89, 200, 0.648);
+    background: rgb(73 36 201 / 65%);
     background-size: 400% 400%;
     bottom: 0;
     animation: wave 13s linear reverse infinite;
@@ -170,7 +170,7 @@ ul.nav-list {
     max-width: 100px;
     width: 100%;
     height: 3px;
-    background-color: #ff4e00;
+    background-color: #ff7a3f;
 }
 .info-box {
     z-index: 9;
@@ -189,7 +189,7 @@ ul.nav-list {
     height: 8vw;
     width: 8vw;
     border-radius: 100%;
-    background: linear-gradient(#ff4e00 0,#ff7315 100%)
+    background: linear-gradient(#ff7a3f 0,#ff7315 100%)
 }
 img.lines {
     position: absolute;
@@ -197,6 +197,16 @@ img.lines {
     top: 0;
     left: 1.5vw;
     transform: rotate(10deg);
+}
+/* SCROLL TO VIEW MORE */
+.scroll-text {
+    z-index: 99;
+}
+.scroll-icon {
+    border: 2px solid #ff7a3f;
+    padding: 0.3rem 0.5rem;
+    border-radius: 3rem;
+    margin-right: .5rem;
 }
 
 /* CARDS */
@@ -235,6 +245,17 @@ img.lines {
     color: #ffffff;
     border-color:#ff4e00;
     box-shadow: 3px 3px 4px rgba(251, 126, 41,.2);
+}
+
+/* FOOTER */
+.footer-bg {
+    background: #eff0fa;
+}
+.footer-logo {
+    max-width: 200px;
+}
+.footer-icon {
+    font-size: 2rem;
 }
 /* CSS ANIMATIONS */
 @-webkit-keyframes color-change-2x {
