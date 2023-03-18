@@ -1,3 +1,216 @@
+/* CALL FONTS */
+/* font regular */
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-Thin.ttf") format("truetype");
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-Light.ttf") format("truetype");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-Bold.ttf") format("truetype");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-ExtraBold.ttf") format("truetype");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-Black.ttf") format("truetype");
+    font-weight: 800;
+}
+
+/* MAIN CSS */
+.font-orange {
+    color:#ff4e00;
+}
+.font-white {
+    color: #fafafa;
+}
+.font-light {
+    font-weight: 300;
+}
+.font-bold {
+    font-weight: 600;
+}
+.bg-orange {
+    background-color:#ff4e00;
+}
+.bg-transparent {
+    background-color: transparent;
+}
+.main-title h1 {
+    font-family: 'Gilroy',sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1;
+}
+a {
+    text-decoration: none!important;
+}
+p {
+    font-size: 1rem;
+}
+.button {
+    background-color:#ff4e00;
+    color: #fafafa;
+    padding: 0.5rem 1rem;
+    border-radius: .5rem;
+    border: none;
+    box-shadow: 3px 3px 4px rgba(251, 126, 41,.2);
+}
+.button-2 {
+    background-color: transparent;
+    color:#ff4e00;
+    padding: 0.5rem 1rem;
+    border-radius: .5rem;
+    border: 2px solid#ff4e00;
+    box-shadow: 3px 3px 4px rgba(251, 126, 41,.2);
+}
+
+.button:hover {
+    background-color:#ff4e00;
+    color: #fafafa;
+    padding: 0.5rem 1rem;
+    border-radius: .5rem;
+    border: none;
+    box-shadow: 3px 3px 4px rgba(251, 126, 41,.2);
+}
+.button-2:hover {
+    background-color: transparent;
+    color:#ff4e00;
+    padding: 0.5rem 1rem;
+    border-radius: .5rem;
+    border: 2px solid#ff4e00;
+    box-shadow: 3px 3px 4px rgba(251, 126, 41,.2);
+}
+
+/* NAV STYLES */
+.header-bg {
+    background: radial-gradient(circle, rgb(12, 12, 103) 0%, rgb(6, 6, 74) 38%, rgb(4, 2, 42) 94%);
+    background-size: 150% 150%;
+    -webkit-animation: color-change-2x 4s linear infinite alternate both;
+    animation: color-change-2x 4s linear infinite alternate both;
+    position: relative;
+    overflow: hidden;
+}
+.header-wave {
+    background: rgba(8, 28, 141, 0.418);
+    background-size: 400% 400%;
+    border-radius: 1000% 1000% 0 0;
+    position: absolute;
+    width: 150%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.4;
+    bottom: 0;
+    left: -200px;
+    z-index: 0;
+}
+.header-wave:nth-of-type(2) {
+    background: rgba(20, 47, 200, 0.472);
+    background-size: 400% 400%;
+    bottom: 0;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+    left: -600px;
+    height: 10em;
+}
+.header-wave:nth-of-type(3) {
+    background: rgba(20, 89, 200, 0.648);
+    background-size: 400% 400%;
+    bottom: 0;
+    animation: wave 13s linear reverse infinite;
+    opacity: 0.6;
+    left: 0px;
+    height: 8em;
+}
 .logo-nav {
-    max-width: 400px;
+    max-width: 200px;
+}
+ul.nav-list {
+    list-style-type: none;
+    align-items: center;
+    padding: 0.5rem 0 0.5rem 2rem;
+}
+
+/* JUMBOTRON */
+.subtitle {
+    font-family: "Gilroy";
+    font-weight: 300;
+}
+.separator {
+    max-width: 100px;
+    height: 3px;
+    background-color: #48dcec;
+}
+.info-box {
+    z-index: 9;
+}
+/* HERO IMAGE */
+.hero-box {
+    position: relative;
+}
+.hero-image {
+    max-width: 35vw;
+}
+.circle {
+    position: absolute;
+    bottom: -10px;
+    right: 5vw;
+    height: 8vw;
+    width: 8vw;
+    border-radius: 100%;
+    background: linear-gradient(#ff4e00 0,#ff7315 100%)
+}
+
+/* CSS ANIMATIONS */
+@-webkit-keyframes color-change-2x {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+  }
+  @keyframes color-change-2x {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+  }
+  @keyframes wave {
+    2% {
+        transform: scaleY(1);
+    }
+
+    25% {
+        transform: scaleY(125%);
+    }
+
+    50% {
+        transform: scaleY(150%);
+    }
+
+    75% {
+        transform: scaleY(125%);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
 }
