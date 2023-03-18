@@ -32,11 +32,20 @@
 }
 
 /* MAIN CSS */
-.font-orange {
+body{
+    background-color: #fcfcfc!important;
+}
+.color-orange {
     color:#ff4e00;
 }
-.font-white {
+.color-white {
     color: #fafafa;
+}
+.color-blue {
+    color: #0a0a5f;
+}
+.color-teal {
+    color: #48dcec;
 }
 .font-light {
     font-weight: 300;
@@ -153,8 +162,15 @@ ul.nav-list {
 }
 .separator {
     max-width: 100px;
+    width: 100%;
     height: 3px;
     background-color: #48dcec;
+}
+.separator-2 {
+    max-width: 100px;
+    width: 100%;
+    height: 3px;
+    background-color: #ff4e00;
 }
 .info-box {
     z-index: 9;
@@ -175,7 +191,51 @@ ul.nav-list {
     border-radius: 100%;
     background: linear-gradient(#ff4e00 0,#ff7315 100%)
 }
+img.lines {
+    position: absolute;
+    max-width: 100px;
+    top: 0;
+    left: 1.5vw;
+    transform: rotate(10deg);
+}
 
+/* CARDS */
+.card-box .card{
+    background-color: #ffffff;
+    min-height: 550px;
+    max-width: 100%;
+    border: none;
+    transition: all .5s;
+    border-radius: .8rem;
+    overflow: hidden;
+}
+.card-box .card:hover {
+    transform: scale(1.05);
+    border: none;
+    box-shadow: 0px 2px 8px rgba(20, 47, 200, 0.1);
+}
+.card-photo {
+    height: 150px;
+    width: 100%;
+    margin: 0 auto 1rem;
+}
+.card-item {
+    font-size: .85rem;
+}
+.button-card {
+    background-color: transparent;
+    color: #06094e;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid #06094e;
+    box-shadow: 3px 3px 4px rgb(2 3 67 / 10%);
+}
+.card:hover .button-card{
+    background-color:#ff4e00;
+    color: #ffffff;
+    border-color:#ff4e00;
+    box-shadow: 3px 3px 4px rgba(251, 126, 41,.2);
+}
 /* CSS ANIMATIONS */
 @-webkit-keyframes color-change-2x {
     0% {
