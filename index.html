@@ -17,10 +17,10 @@
 </head>
 <body>
     <div class="container-fluid p-0">
-        <div class="topnav-promotion row justify-content-center py-3 px-5 m-0" style="height: 40px;background-color: rgb(55 46 128);">
-            <div class="col-4 text-left color-white" style="font-size: .8rem;"></div>
-            <div class="col-4"></div>
-            <div class="col-4 text-end color-white" style="font-size: .8rem;">Call Center: <a class="color-teal font-bold" href="tel:+56998334455">+569 98334455</a></div>
+        <div class="topnav-promotion d-none d-md-flex row justify-content-center py-2 px-5 m-0" style="height: 40px;background-color: rgb(55 46 128);">
+            <div class="col-12 col-md-4 text-left color-white" style="font-size: .8rem;"><i class="fa-regular fa-envelope"></i> Escríbenos a <a class="color-teal font-bold" href="mail:contacto@kinemux.cl">contacto@kinemux.cl</a></div>
+            <div class="col-1 col-md-4 color-white font-bold text-center"></div>
+            <div class="col-12 col-md-4 text-end color-white" style="font-size: .8rem;">Call Center: <a class="color-teal font-bold" href="tel:+56998334455">+569 98334455</a></div>
         </div>
         <!-- header START-->
         <header class="header-bg"> 
@@ -41,14 +41,24 @@
                     <!-- navmenu -->
                     <div  class="nav-box col-md-10 d-none d-md-block">
                         <ul class="nav-list d-flex flex-row justify-content-end align-items-center">
-                            <li class="nav-item color-white px-3">¡Sómos <span class="font-bold">Kine Muv</span>!</li>
-                            <li class="nav-item color-white px-3">Nuestros planes</li>
-                            <li class="nav-item color-white px-3">¿Llegamos a tu casa?</li>
-                            <li class="nav-item color-white px-3">Profesionales</li>
-                            <li class="nav-item color-white px-3">Contácto</li>
+                            <li class="nav-item px-3">
+                                <a class="color-white" href="">¡Sómos <span class="kine-span font-bold">Kine Muv</span>!</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="color-white" href="#plans">Nuestros planes</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="color-white" href="">¿Llegamos a tu casa?</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="color-white" href="">Profesionales</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="color-white" href="#contacto">Contácto</a>
+                            </li>
                             <!-- login -->
-                            <li class="nav-item color-white px-3">
-                                <a href="">
+                            <li class="nav-item px-3">
+                                <a class="color-white" href="">
                                     <button class="button">Iniciar sesión</button>
                                 </a>
                             </li>
@@ -114,7 +124,7 @@
         </header> <!-- header END -->
         
         <!-- plans -->
-        <section class="container card-box">
+        <section class="container card-box p-0">
             <!-- cards title -->
             <div id="plans" class="d-flex flex-column align-items-center">
                 <h2 class="color-blue mt-5 mb-3 text-center">Las propuestas que tenemos para ti</h2>
@@ -139,8 +149,8 @@
                                     <p class="text-left card-item mb-0 px-3 color-blue"><i class="fa-solid fa-circle-check color-teal"></i> Atención 1 hora</p>
                                     <p class="text-left card-item mb-0 px-3 color-blue"><i class="fa-solid fa-circle-check color-teal"></i> Evaluación nutricional</p>
                                     <p class="text-left card-item mb-0 px-3 color-blue"><i class="fa-solid fa-circle-check color-teal"></i> Vendajes neuromusculares</p>
-                                    <p class="text-left card-item mb-0 px-3 color-blue"><i class="fa-solid fa-circle-check color-teal"></i></p>
-                                    <p class="text-left card-item mb-0 px-3 color-blue"><i class="fa-solid fa-circle-check color-teal"></i></p>
+                                    <p class="text-left card-item mb-0 px-3 color-blue"><i class="fa-solid fa-circle-check color-teal"></i> Electroestimuladores</p>
+                                    <p class="text-left card-item mb-0 px-3 color-blue"><i class="fa-solid fa-circle-check color-teal"></i> Termoterapia</p>
                                 </div>
                             </div>
                             <div class="col-12 p-3">
@@ -241,11 +251,52 @@
             </div>
         </section>
         
+        <!-- contacto -->
+        <div id="contacto" class="container">
+            <div class="row m-0">
+                <div class="form-image-box col-12 col-md-6 p-0">
+                </div>
+                <div class="col-12 col-md-6 p-5">   
+                    <h3 class="color-blue">Escríbenos</h3>
+                    <form>
+                        <div class="row">
+                            <div class="form-group col-6">
+                                <label for="name-input">Nombre</label>
+                                <input type="text" class="form-control" id="name-input" placeholder="Gerónimo">
+                              </div>
+                              <div class="form-group col-6">
+                                <label for="lastname-input">Apellido</label>
+                                <input type="text" class="form-control" id="lastname-input" placeholder="Astudillo">
+                              </div>
+                        </div>
+                        <div class="form-group mt-2">
+                          <label for="mail-input">Correo</label>
+                          <input type="email" class="form-control" id="mail-input" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group mt-2">
+                          <label for="form-asunto">Asunto</label>
+                          <select class="form-control" id="form-asunto">
+                            <option>Quiero una evaluación</option>
+                            <option>Necesito pedir una hora</option>
+                            <option>Inasistencias</option>
+                            <option>Sugerencias</option>
+                            <option>Cambiar mi plan actual</option>
+                          </select>
+                        </div>
+                        <div class="form-group mt-2">
+                          <label for="message">Mensaje</label>
+                          <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="button bg-orange mb-2 mt-3">Enviar</button>
+                      </form>
+                </div>
+            </div>
+        </div>
         <!--footer -->
         <footer class="footer-bg py-3 px-5">
             <div class="row m-0">
                 <!-- logo footer -->
-                <div class="col-12 col-md-3">
+                <div class="footer-logo-box col-12 col-md-3">
                     <img class="footer-logo" src="./assets/img/logo-kinemuv-3.png" alt="logo kinemuv">
                 </div>
                 <div class="col-12 col-md-3 mt-3 text-center">
